@@ -1,0 +1,58 @@
+{
+  "name": "rest-api-ts-docker",
+  "version": "1.0.0",
+  "description": "A scalable Node.js REST API built with TypeScript, featuring JWT-based authentication, MongoDB for data persistence, and Redis for caching. The application is Dockerized for consistent development and deployment, following clean architecture and modern backend best practices.st practices.",
+  "main": "index.js",
+
+    "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswinsivadas-tech/rest-api-ts-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswinsivadas-tech/rest-api-ts-docker/issues"
+  },
+  "homepage": "https://github.com/aswinsivadas-tech/rest-api-ts-docker#readme",
+"dependencies": {
+    "argon2": "^0.44.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.2",
+    "morgan": "^1.10.1",
+    "redis": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
