@@ -1,6 +1,6 @@
 import express from 'express';
 import { loginUser, registerUser } from '../controllers/authController.js';
-import { registerValidation } from '../validations/auth.validation.js';
+import { registerValidation } from '../validation/auth.validation.js';
 import { validate } from '../middleware/validation.middleware.js';
 
 const authRoutes = express.Router({ mergeParams: true });

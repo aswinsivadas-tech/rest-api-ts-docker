@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import Product from '../models/product.js';
-import { CreateProductDTO, UpdateProductDTO, IProduct } from '../interfaces/product.interface.js';
+import { CreateProductDTO, UpdateProductDTO } from '../interfaces/product.interface.js';
 
 /**
  * Add product (book)
