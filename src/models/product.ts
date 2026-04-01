@@ -9,7 +9,7 @@ const productSchema = new Schema<IProduct>(
     price: { type: Number, required: true, min: 0 },
     category: String,
     publisher: String,
-    isbn: { type: String, unique: true },
+    isbn: { type: String, unique: true, sparse: true },
     stock: { type: Number, default: 0, min: 0 },
   },
   {
