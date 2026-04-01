@@ -27,6 +27,12 @@ app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
 app.use(compression());
 
+// LOgging
+if (process.env.NODE_ENV === 'production') {
+  app.use(morgan('dev'));
+} else {
+   app.use(morgan('combined')); // better logging for development
+}
 
 // connect to MongoDB
 await connectDB();
